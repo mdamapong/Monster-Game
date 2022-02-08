@@ -21,3 +21,5 @@ MVP:
 -time for feed/sleep/play will *2
 
 -pet will age up again at 7 mins and needs timer will *2 again
+
+
