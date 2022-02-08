@@ -1,8 +1,8 @@
 MVP:
 
-- user will have to pick your pets
+-user will have to pick your pets
 
-- user will have to incubate the egg by playing/petting function 
+-user will have to incubate the egg by playing/petting function 
 
 -user will name the pet when spawn
 
