@@ -23,7 +23,4 @@ MVP:
 -pet will age up again at 7 mins and needs timer will *2 again
 
 
-<<<<<<< HEAD
-=======
 ![Screen Shot 2022-02-08 at 9 07 45 AM](https://user-images.githubusercontent.com/58996441/153038661-8a09af77-5ea6-4802-b35e-9aebbe768b89.png)
->>>>>>> 2aa64c53a5d2414c48e3a892c919226b688e305e

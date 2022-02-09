@@ -1,0 +1,43 @@
+h1{
+  text-align:justify;
+  width: 700px;
+  background-color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* top: 30%;
+  left: 15%; */
+  /* justify-self: center; */
+  flex-direction: rows;
+}
+
+body {
+    background-color: pink;
+}
+
+.container{
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    background: #3f3f3f;
+    border: 5px solid rgba(0,0,0,.4);
+    border-radius: 5px;
+  /*  flex properties  */
+    display: flex;
+    
+}
+
+.Hungerstatus, .Sleepstatus, .Funstatus{
+    min-height: 50px;
+  min-width: 50px;
+  background: #fff;
+  padding: 20px;
+  border: 3px solid rgba(0,0,0,.4);
+  border-radius: 2px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+
+}

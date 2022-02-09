@@ -5,33 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <script src = "scripts/app.js"></script>
+    
+    
+    <link rel="stylesheet" href="style/styles.css">
 
-    <script src = "styles/styles.css"></script>
+    
 
+   
 
 
 
     <title>Tamagotchi</title>
 </head>
 <body>
-    <h1 class = "GameTitles">Monster</h1>
+    <header> 
+        <!-- <h1>Monster</h1> -->
+    </header>
+   
 <main>
-    <div class = "Hungerstatus"></div>
-    <div class = "Sleepstatus"></div>
-    <div class = "Funstatus"></div>
-    <div class = "Agebox"></div>
-    <div class = "Timebox"></div>
-    <div class = "Feedbts"></div>
-    <div class = "Sleepbts"></div>
-    <div class = "Playbts"></div>
-</main>
+    <section id="game" class = "game_screen">
+        <button id="star_btn" class="star_btn">Start</button>
+
+        <section id='needs'>
+            <div class="hunger">hunger:</div> <span id="hunger_num"></span></div>
+            <div class="sleep">sleep:</div> <span id="sleep_num"></span></div>
+            <div class="play">mood:</div> <span id="mood_num"></span></div>
 
 
 
+        </section>
+
+
+    </section>
 
 
 
-    
+<section class="player_buttons">
+    <button id="food_btn">FEED</button>
+    <button id="sleep_btn">NAP</button>
+    <button id="play_btn">PLAY</button>
+  </section>
+
 </body>
 </html>
+
+
+
+
+
+
+
+<script src = "scripts/app.js" defer></script>
