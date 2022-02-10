@@ -23,6 +23,9 @@ const monsterImg = document.querySelector('.Monster') // first monster
 const monsterImg2 = document.querySelector(".Monster2"); // monster level 2
 monsterImg2.remove() //this line hide level up monster
 
+const monsterImg3 = document.querySelector(".Monster3"); // monster level 2
+monsterImg3.remove() //this line hide level up monster
+
 const gameOver = document.querySelector(".rip");
 gameOver.remove()
 
@@ -99,6 +102,19 @@ food_btn.addEventListener('click', (e) => {
     let levelUpInterval = setInterval(function(){
         monsterImg.innerHTML = monsterImg2.innerHTML
         levelEl.innerHTML = 2
+        if(food_num <= 0 || sleep_num <= 0 || mood_num <= 0){
+            clearInterval(statusInterval)
+            monsterImg.innerHTML = gameOver.innerHTML
+        }
+
+    }, 8000)
+
+
+   
+
+    let levelUpInterval1 = setInterval(function(){
+        monsterImg2.innerHTML = monsterImg3.innerHTML
+        levelEl.innerHTML = 3
         if(food_num <= 0 || sleep_num <= 0 || mood_num <= 0){
             clearInterval(statusInterval)
             monsterImg.innerHTML = gameOver.innerHTML
