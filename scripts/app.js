@@ -15,7 +15,7 @@ const moodMsg = document.querySelector("#msg_mood");
 const food_btn  = document.querySelector('#food_btn');
 const sleep_btn = document.querySelector('#sleep_btn');
 const play_btn = document.querySelector('#play_btn');
-const star_btn = document.querySelector('#star_btn');
+const reset_btn = document.querySelector('#reset_btn');
 
 
 const monsterImg = document.querySelector('.Monster') // first monster
@@ -43,8 +43,8 @@ playEl.innerHTML = mood_num;
 levelEl.innerHTML = level_num;
 
 
-star_btn.addEventListener('click', (e) => {
-    console.log("star work")
+reset_btn.addEventListener('click', (e) => {
+    location.reload()
 })
 
 /// set click event of feed to add scores
