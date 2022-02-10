@@ -3,18 +3,20 @@ console.log("are you woking?")
 
 
 //// linking ids to status scores
-const feedEl = document.querySelector("#hunger_num")
-const sleepEl = document.querySelector("#sleep_num")
-const playEl = document.querySelector("#mood_num")
-const levelEl = document.querySelector("#level_num")
+const feedEl = document.querySelector("#hunger_num");
+const sleepEl = document.querySelector("#sleep_num");
+const playEl = document.querySelector("#mood_num");
+const levelEl = document.querySelector("#level_num");
 
-const feedMsg = document.querySelector("#msg_hunger")
-const sleepMsg = document.querySelector("#msg_sleep")
-const moodMsg = document.querySelector("#msg_mood")
+const feedMsg = document.querySelector("#msg_hunger");
+const sleepMsg = document.querySelector("#msg_sleep");
+const moodMsg = document.querySelector("#msg_mood");
 ////  linking ids to user buttons
 const food_btn  = document.querySelector('#food_btn');
 const sleep_btn = document.querySelector('#sleep_btn');
 const play_btn = document.querySelector('#play_btn');
+const star_btn = document.querySelector('#star_btn');
+
 
 const monsterImg = document.querySelector('.Monster') // first monster
 
@@ -37,6 +39,10 @@ sleepEl.innerHTML = sleep_num;
 playEl.innerHTML = mood_num;
 levelEl.innerHTML = level_num;
 
+
+star_btn.addEventListener('click', (e) => {
+    console.log("star work")
+})
 
 /// set click event of feed to add scores
 food_btn.addEventListener('click', (e) => {
@@ -92,10 +98,13 @@ food_btn.addEventListener('click', (e) => {
 
     let levelUpInterval = setInterval(function(){
         monsterImg.innerHTML = monsterImg2.innerHTML
-        
         levelEl.innerHTML = 2
-
+        if(food_num <= 0 || sleep_num <= 0 || mood_num <= 0){
+            clearInterval(statusInterval)
+            monsterImg.innerHTML = gameOver.innerHTML
+        }
 
     }, 8000)
 
 
+    

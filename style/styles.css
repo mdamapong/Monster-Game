@@ -1,43 +1,66 @@
-h1{
-  text-align:justify;
-  width: 700px;
-  background-color: white;
-  border-radius: 3px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  /* top: 30%;
-  left: 15%; */
-  /* justify-self: center; */
-  flex-direction: rows;
-}
+
 
 body {
     background-color: pink;
 }
 
-.container{
-    height: 200px;
-    margin: 20px;
-    padding: 20px;
-    background: #3f3f3f;
-    border: 5px solid rgba(0,0,0,.4);
-    border-radius: 5px;
-  /*  flex properties  */
-    display: flex;
-    
+main{
+  display: flex;
+  flex-direction: row;
 }
 
-.Hungerstatus, .Sleepstatus, .Funstatus{
-    min-height: 50px;
-  min-width: 50px;
-  background: #fff;
-  padding: 20px;
-  border: 3px solid rgba(0,0,0,.4);
-  border-radius: 2px;
+/* #game {
+  background-color: white;
+  width: 50%;
+  height: 100px;
+} */
+
+#game {
   text-align: center;
-  line-height: 50px;
-  font-size: 30px;
-
 }
+
+#needs {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: aquamarine;
+  border-color: 1px black;
+  width: 25%;
+}
+
+.level, .hunger, .play, .sleep  {
+  border: 1px solid black;
+	text-align: center;
+	border-radius: 1em;
+	background-color: lightgray;
+	margin: 0.5em;
+}
+
+#level_num, #hunger_num, #mood_num, #sleep_num {
+  border: 1px solid black;
+	text-align: center;
+	border-radius: 1em;
+	background-color: yellow;
+	margin: 0.5em;
+}
+
+
+
+
+
+
+
+#star_btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+
