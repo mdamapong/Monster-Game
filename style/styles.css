@@ -44,8 +44,9 @@ main{
 	margin: 0.5em;
 }
 
-#msg_mood {
+#msg_mood, #msg_sleep, #msg_hunger {
   font-family: Arial, Helvetica, sans-serif;
+  color: red;
 }
 
 
