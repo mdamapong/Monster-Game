@@ -66,6 +66,8 @@ main{
 .player_buttons {
   display: flex;
   flex-direction: row;
+  height: 200px;
+  
 }
 
 .Monster, .Monster2 { 
