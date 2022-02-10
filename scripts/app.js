@@ -30,9 +30,9 @@ const gameOver = document.querySelector(".rip");
 gameOver.remove()
 
 /// setbase scores at 9 for testing
-let food_num = 9;
-let sleep_num = 9;
-let mood_num = 9;
+let food_num = 5;
+let sleep_num = 5;
+let mood_num = 5;
 let level_num = 1;
 
 
@@ -120,7 +120,7 @@ food_btn.addEventListener('click', (e) => {
             monsterImg.innerHTML = gameOver.innerHTML
         }
 
-    }, 8000)
+    }, 10000)
 
 
     
