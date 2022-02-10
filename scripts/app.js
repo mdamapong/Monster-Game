@@ -8,10 +8,21 @@ const sleepEl = document.querySelector("#sleep_num")
 const playEl = document.querySelector("#mood_num")
 const levelEl = document.querySelector("#level_num")
 
+const feedMsg = document.querySelector("#msg_hunger")
+const sleepMsg = document.querySelector("#msg_sleep")
+const moodMsg = document.querySelector("#msg_mood")
 ////  linking ids to user buttons
 const food_btn  = document.querySelector('#food_btn');
 const sleep_btn = document.querySelector('#sleep_btn');
 const play_btn = document.querySelector('#play_btn');
+
+const monsterImg = document.querySelector('.Monster') // first monster
+
+const monsterImg2 = document.querySelector(".Monster2"); // monster level 2
+monsterImg2.remove() //this line hide level up monster
+
+const gameOver = document.querySelector(".rip");
+gameOver.remove()
 
 /// setbase scores at 9 for testing
 let food_num = 9;
@@ -67,9 +78,24 @@ food_btn.addEventListener('click', (e) => {
     sleepEl.innerHTML = sleep_num;
     playEl.innerHTML = mood_num;
 
+
     if(food_num <= 0 || sleep_num <= 0 || mood_num <= 0){
         clearInterval(statusInterval)
+        feedMsg.innerHTML = " I'm too hungry now I'm death"
+        sleepMsg.innerHTML = " I'm just gonna sleep somewhere else"
+        moodMsg.innerHTML = " I'm done with you goodbye"
+        monsterImg.innerHTML = gameOver.innerHTML
     }
-  }, 3000)
+
+}, 3000)
+
+
+    let levelUpInterval = setInterval(function(){
+        monsterImg.innerHTML = monsterImg2.innerHTML
+        
+        levelEl.innerHTML = 2
+
+
+    }, 8000)
 
 
