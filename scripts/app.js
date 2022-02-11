@@ -100,27 +100,33 @@ food_btn.addEventListener('click', (e) => {
 
 
     let levelUpInterval = setInterval(function(){
-        monsterImg.innerHTML = monsterImg2.innerHTML
-        levelEl.innerHTML = 2
+        level_num++
+        if (level_num === 2) {
+            monsterImg.innerHTML = monsterImg2.innerHTML
+        } else if (level_num === 3) {
+            monsterImg.innerHTML = monsterImg3.innerHTML
+        }
+
+        
+        levelEl.innerHTML = level_num
         if(food_num <= 0 || sleep_num <= 0 || mood_num <= 0){
             clearInterval(statusInterval)
             monsterImg.innerHTML = gameOver.innerHTML
         }
 
-    }, 8000)
+    }, 3000)
 
 
    
 
-    let levelUpInterval1 = setInterval(function(){
-        monsterImg2.innerHTML = monsterImg3.innerHTML
-        levelEl.innerHTML = 3
-        if(food_num <= 0 || sleep_num <= 0 || mood_num <= 0){
-            clearInterval(statusInterval)
-            monsterImg.innerHTML = gameOver.innerHTML
-        }
+    // let levelUpInterval1 = setInterval(function(){
+    //     monsterImg2.innerHTML = monsterImg3.innerHTML
+    //     if(food_num <= 0 || sleep_num <= 0 || mood_num <= 0){
+    //         clearInterval(statusInterval)
+    //         monsterImg.innerHTML = gameOver.innerHTML
+    //     }
 
-    }, 10000)
+    // }, 10000)
 
 
     
